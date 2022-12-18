@@ -1,0 +1,269 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 75px;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 250px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul li:hover, .active, input[type="submit"]:hover, button:hover {
+    background-color: #a9a9a9;
+    color: white;
+}
+
+.login {
+    float: right;
+}
+
+#btn-login {
+    margin-right: 16px;
+}
+
+.container {
+    margin-top: 75px;
+}
+
+.container h1 {
+    font-size: 60px;
+    line-height: 54px;
+    margin: 0;
+}
+
+.container h3 {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0;
+}
+
+.form-wrapper {
+    margin-top: 75px;
+}
+
+.register-wrapper {
+    display: block;
+}
+
+.login-wrapper {
+    display: none;
+}
+
+.register-form, .login-form {
+    max-width: 40vw;
+    float: left;
+}
+
+.register-text, .login-text {
+    max-width: 50vw;
+    float: left;
+    margin-left: 50px;
+}
+
+.register-text h3, .login-text h3 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+.register-text p, .login-text p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 0;
+}
+
+input, select {
+    height: 48px;
+    border: 1px solid #d9d9d9;
+    padding: 0 8px 0 8px;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 250px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+select {
+    text-align: right;
+    min-width: 0;
+}
+
+input[type="submit"], button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+.register-form a {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    bottom: 75px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.recipe-wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 50px 4.5%;
+}
+
+.recipe {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.recipe .recipe-img {
+    border-radius: 10px 50% 50% 10px;
+    border-right: 3px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+
+.recipe-desc {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.recipe-desc h1{
+    line-height: 32px;
+    font-size: 26px;
+    margin: 0;
+}
+
+.recipe-desc p {
+    line-height: 24px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.rating {
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 10px;
+}
+
+.form-input-wrapper {
+    margin-top: 16px;
+}
+
+.form-input-wrapper input, .image-wrapper .image-wrapper-form input {
+    margin-bottom: 6px;
+}
+
+.form-input-wrapper #duration {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+}
+
+.form-input-wrapper p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.form-input-wrapper #num-ppl {
+    display: inline-block;
+    width: 10%;
+    text-align: right;
+}
+
+#ingredients, #steps {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-column-gap: 5px;
+}
+
+#steps {
+    grid-template-columns: 1.8% 98.2%;
+}
+
+#ingredients p, #steps p {
+    line-height: 48px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: middle;
+    margin: 0;
+    text-align: right;
+}
+
+.add-item {
+    margin-left: 6%;
+}
+
+.form-input-wrapper .add-item {
+    margin-left: 2.2%;
+}
+
+#submit-recipe {
+    float: right;
+    width: 20%;
+    margin-top: 150px;
+    margin-bottom: 75px;
+    background-color: #adff2f;
+    border: none;
+}
+
+#submit-recipe:hover {
+    background-color: #6bbd0b;
+    color: white;
+}
+
+.rating-wrapper {
+    margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: 8% 69.3% 10%;
+    grid-column-gap: 10px;
+}
+
+.rating-wrapper img{
+    margin-top: 6px;
+}
+
+.rating-wrapper input[type="submit"] {
+    cursor: pointer;
+    background-color: #d9d9d9;
+}
