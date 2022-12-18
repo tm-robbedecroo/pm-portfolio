@@ -25,6 +25,17 @@
         <div class="form-wrapper">
             <div class="register-wrapper" id="register-wrapper">
                 <div class="register-form">
+                    <?php
+
+                    if(isset($_GET["err"]))
+                    {
+                        if($_GET["err"] == 1)
+                        {
+                            echo '<p class="err">Please fill in all the fields.</p>';
+                        }
+                    }
+
+                    ?>
                     <table>
                         <form method="post" action="php/register.php">
                             <tr>
@@ -53,6 +64,17 @@
             </div>
             <div class="login-wrapper" id="login-wrapper">
                 <div class="login-form">
+                    <?php
+
+                    if(isset($_GET["err"]))
+                    {
+                        if($_GET["err"] == 1)
+                        {
+                            echo '<p class="err">Please fill in all the fields.</p>';
+                        }
+                    }
+
+                    ?>
                     <table>
                         <form method="post" action="php/login.php">
                             <tr>

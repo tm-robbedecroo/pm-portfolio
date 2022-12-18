@@ -61,6 +61,16 @@ nav ul li:hover, .active, input[type="submit"]:hover, button:hover {
     margin-top: 75px;
 }
 
+.err {
+    border: 1px solid red;
+    background-color: lightcoral;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
 .register-wrapper {
     display: block;
 }

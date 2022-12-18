@@ -8,6 +8,13 @@ $lastname  = trim(ucfirst(strtolower($_POST["lastname"])));
 $username  = trim($_POST["username"]);
 $password  = md5($_POST["password"]);
 
+if($firstname == "" || $lastname == "" || $username == "" || $password == "")
+{
+    $_POST["err"] = 2;
+    header("Location: ../index.php?err=1");
+    die();
+}
+
 $qry = "INSERT INTO tbl_users (userid, firstname, lastname, username, password) VALUES (NULL, ?, ?, ?, ?);";
 
 $statement = $conn->prepare($qry);
